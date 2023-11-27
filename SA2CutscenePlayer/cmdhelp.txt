@@ -1,0 +1,121 @@
+﻿SA3D SA2 Eventplayer @X-Hax
+    Short Usage: [SA2 filepath] [Event ID] {Options}
+    Long Usage: manual [main event file path] [effect textures file] {Options}
+
+    SA2 filepath:
+        Path to the SA2 root folder
+
+    Event ID:
+        ID of the event 
+
+    main event file path:
+        Path to the main PRS event file
+
+    Options:
+        -sl --sub-language [key]
+            ID of the subtitle language to use.
+            Input Values:
+                J = Japanese
+                1 = English (Default)
+                2 = French
+                3 = Spanish
+                4 = German
+                5 = Italian
+    
+        -al --audio-language [key]
+            Override Audio language.
+            Input Values:
+                J = Japanese
+                E = English
+
+        -mv --music-volume [value]
+            Music Audio Volume (clamped between 0 and 10), Default 0.6
+
+        -sv --sfx-volume [value]
+            SFX Audio Volume (clamped between 0 and 10), Default 0.4
+
+        -vv --voice-volume [value]
+            Voice Audio Volume (clamped between 0 and 10), Default 1.0
+
+        -ug --upgrades [mapping]
+            Enables specific upgrades. 0 = disabled, X = enabled
+            Patterns (# = either 0 or X):
+
+            #
+                Affect all upgrades
+
+            ######
+                Affect all upgrades of character:
+                    1. Sonic
+                    2. Tails
+                    3. Knuckles
+                    4. Shadow
+                    5. Eggman
+                    6. Rouge
+
+            #############################
+                Affect upgrades individually
+                Upgrade list:
+                    1. Sonic Light Shoes
+                    2. Sonic Ancient Light
+                    3. Sonic Magic Gloves
+                    4. Sonic Flame Ring
+                    5. Sonic Bounce Bracelet
+                    6. Sonic Mystic Melody
+
+                    7. Tails Booster
+                    8. Tails Bazooka
+                    9. Tails Laser Blaster
+                    10. Tails Mystic Melody
+
+                    11. Knuckles Shovel Claws
+                    12. Knuckles Sunglasses
+                    13. Knuckles Hammer Gloves
+                    14. Knuckles Air Necklace
+                    15. Knuckles Mystic Melody
+
+                    16. Super Sonic (unused)
+
+                    17. Shadow Air Shoes
+                    18. Shadow Ancient Light
+                    19. Shadow Flame Ring
+                    20. Shadow Mystic Melody
+
+                    21. Eggman Jet Engine
+                    22. Eggman Large Cannon
+                    23. Eggman Laser Blaster
+                    24. Eggman Protective Armor
+                    25. Eggman Mystic Melody
+
+                    26. Rouge Pick Nails
+                    27. Rouge Treasure Scope
+                    28. Rouge Iron Boots
+                    29. Rouge Mystic Melody
+
+    Controls:
+        M - Switch camera mode between animated and manual
+        P - Pause the cutscene playback
+        F1 - Debug Help menu
+        F2 - Camera Debug
+        F3 - Render Debug
+        F5 - Rotate render mode
+        F6 - Rotate Wireframe mode
+        Right shift - hold this while rotating a mode to rotate back
+
+        When in manual camera mode:
+            O - Change between orbit and first person control mode
+            R - Reset camera (changes to Orthographic too)
+            Numpad 5 - Change between Perspective and Orthograph
+            Numpad 1,3,7 - Align camera with axis
+
+            When first person:
+                WASD,Space,Shift - Move camera
+                Mouse - Look around
+                Scrollwheel - Zoom camera
+        
+            When orbiting:
+                Middle mouse - rotate camera around orbit origin
+                Middle mouse + shift - Pan camera
+                Middle mouse + ctrl - Zoom camera
+                Scrollwheel - Also zoom camera
+
